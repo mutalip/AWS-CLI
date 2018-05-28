@@ -1,4 +1,5 @@
 #You can get help on the command line to see the supported services, 
+#See the AWS CLI command reference for the full list of supported services. https://docs.aws.amazon.com/cli/latest/reference/#available-services
 aws autoscaling help
 AWS ec2 describe-instances help
 aws iam create-role help
