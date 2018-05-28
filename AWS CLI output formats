@@ -1,0 +1,3 @@
+AWS EC2 Ddescribe-instances
+AWS EC2 Ddescribe-instances --output table
+AWS EC2 Ddescribe-instances --output text
