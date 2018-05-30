@@ -1,0 +1,7 @@
+#Install jmespath terminausing pip
+
+sudo pip install jmespath-terminal
+
+example:
+aws ec2 describe-instance | jpterm
+
