@@ -1,0 +1,3 @@
+--query
+
+example: aws ec2 --query describe-regions 'Regions[?RegionName=="us-west-2"]'
