@@ -1,0 +1,7 @@
+Testing ermission-   --dry-run
+
+example: 
+aws ec2 describe-instaces --dry-run
+
+an error occured...
+
