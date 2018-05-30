@@ -1,0 +1,4 @@
+#appliying filter saves time
+--filter
+example: aws ec2 describe-instance Name=instance-type,Value=t2.micro
+
