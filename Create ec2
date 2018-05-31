@@ -7,3 +7,8 @@ outpu:
 }
 
 aws ec2 describe-instances-all
+
+
+#Create ec2 and install nginx server
+
+awsec2 run-instances --image-id ami-21xxxx --count 1 --instance-type t2.micro --security-groups-ids sg-900004f8 --user-data "sudo apt-get install nginx"
