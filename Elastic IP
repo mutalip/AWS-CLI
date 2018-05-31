@@ -1,0 +1,14 @@
+# get a elastic ip address
+aws ec2 allocate-address 
+
+#Associate the address to ec2 instances
+
+aws ec2-associate-address --instances-id i-80121212 --allocation-id eipalloc-0d4xxxx
+
+outpu: 
+{
+  "AssociationId": "eipassoc-e17xxx"
+}
+
+#Verify everything
+awd ec2 describe-instances
