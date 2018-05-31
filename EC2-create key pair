@@ -1,0 +1,6 @@
+#Create key pair   create-key-pair --key-name mykey
+
+example:
+
+aws ec2 create-key-pair --key-name mykey --output text > mykey.pem
+ls
