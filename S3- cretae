@@ -1,0 +1,8 @@
+
+#Create bucket
+
+aws s3 mb s3://mybucket.mutalip
+
+#list the buckets
+aws s3 ls
+
