@@ -1,0 +1,7 @@
+#move
+
+aws s3 mv s3://mybucket1.mutalip . --recursive
+
+#include and exclude filter
+
+aws s3 mv s3://mybucket1.mutalip . --recursive
