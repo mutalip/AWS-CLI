@@ -1,0 +1,9 @@
+
+aws ec2 run-instance --image-id ami-abc12345 --count 2 --instance-type t2.micro --key-name mykey.pem --security-groups-ids sg-900004f8 subnet-id sunet -62ffsdf
+
+outpu:
+{
+
+}
+
+aws ec2 describe-instances-all
