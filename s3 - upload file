@@ -1,0 +1,9 @@
+#upload file
+
+mkdir testbucket
+nao test1.txt
+aws s3 cp test1.txt s3://bucket1.mutalip
+
+aws s3 ls
+
+
