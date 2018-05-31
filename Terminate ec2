@@ -1,0 +1,3 @@
+#Ternimate instances
+
+aws ec2 terminate-instance --instance-ids i-8xxxx
