@@ -6,4 +6,7 @@ aws s3 cp test1.txt s3://bucket1.mutalip
 
 aws s3 ls
 
+# list the file in the bucket
+aws s3 ls s3://mybucket1.mutalip
+
 
