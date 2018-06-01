@@ -1,0 +1,18 @@
+#Create SQS  Distributed queue system, reliable, secure, simple, flexible, scalable
+
+
+
+#List queue
+aws sqs list-queues
+
+aws sqs send-message --queue-url https://xxxxx
+aws sqs receive-message --queue-url https://xxxxx
+
+aws sqs delete-mesage --queue-url https://xxxxx --receipt-handle
+
+aws sqs send-message  --queue-url https://xxxxx --message-body "This is" --delay-seconds 10 
+
+#Delete SQS delete
+aws sqs delete-queue  --queue-url https://xxxx
+
+
