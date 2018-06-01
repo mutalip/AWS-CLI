@@ -1,1 +1,25 @@
+#Create
 
+aws iam create-user --user-name Bob
+
+#create group
+aws iam create-group --group-name standardgp
+
+#Add user to group
+aws iam add-user-to-group  --user-name Bob --group-name standardgp
+
+#Get info from group
+aws iam get-group --group-name standardgp
+
+#Create password
+aws iam create-login-profile --user-name bob1 --password Ngl999
+
+#Create access key for user
+
+aws iam create-access-key --user-name Bob
+
+#Delete access key
+
+aws iam delete-access-key --user-name Bob
+
+aws iam create-access-key --user-name Bob >> key.txt
