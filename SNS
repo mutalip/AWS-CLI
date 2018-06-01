@@ -1,0 +1,15 @@
+#Create toic
+aws sns create-topic --name test1
+
+#Subscribe
+aws sns subscribe --topic-arn arn:aws:sns:us-west-2:371696244791:test1 --protocol email --notification-endpoint mutalip.kurban@gmail.com
+
+#Publish
+aws sns publish --topic-arn arn:aws:sns:us-west-2:371696244791:test1 --message "This is great"
+
+
+#Unsubsicribe
+aws sns unsubscribe --subscription-arn arn:aws:sns:us-west-2:371696244791:test1:551362d3-3ac0-4eac-92ff-9310eef26bb2
+
+#Delete topic
+
