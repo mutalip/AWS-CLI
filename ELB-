@@ -1,0 +1,5 @@
+#Automate elb instances
+
+aws elbv2 create-load-balancer --name elb1 --subnets subnet-8xxxx subnet-9xxxxx  --security-group sg-f7exxxxx
+
+
