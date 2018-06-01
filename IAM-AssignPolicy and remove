@@ -1,0 +1,11 @@
+#Assign Policy to group
+aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/AdministratorAccess --group-name standardgp
+
+
+#remove user from group
+aws iam remove-user-from-group --group-name standardgp --user-name Bob
+
+
+#Delete group
+aws iam detach-group-policy --policy-arn arn:aws:iam::aws:policy/AdministratorAccess --group-name standardgp
+  
