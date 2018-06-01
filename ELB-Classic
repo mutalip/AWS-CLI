@@ -1,0 +1,9 @@
+#Create  
+aws elb create-load-balancer --load-balancer-name -lb1 --listeners "Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=80" --subnets subnet-xxx subnet-xxx --security-groups  sg-xxxx
+
+#List
+aws elb describe-load-balancer 
+
+
+aws elb describe-load-balancer  --load-balancer-name elb1
+
