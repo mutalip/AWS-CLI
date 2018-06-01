@@ -1,0 +1,25 @@
+#Create target group
+
+aws elbv2 create-target-group --name standardtggp --protocol HTTP --port 80 --vpc-d vpc-4xxx
+
+Target an ce2 instance or ecs .
+
+aws elbv2 re
+
+aws elbv2 register-targets --target-group-arn arn:xxxx  id=xxxx
+
+#create Listener, create listener for designated target
+aws elbv2 create-listener --load-balancer-arn arn:xxxxxxx --protocol HTTP --port 80 --deafult-actions Type=forward,TrageGroupArn=arn:xxxx
+
+#Check health
+aws elbv2 describe-target-health --target-group-arn arn:xxxx
+
+ aws elbv2 describe-load-balancers
+aws elbv2 describe-target-group
+
+#Delete load balance
+aws elbv2 delete-load-balancer --load-balancer-arn arn
+
+#Delete target group
+aws elbv2 delete-target-group --target-group-arn arrn:
+
