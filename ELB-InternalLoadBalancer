@@ -1,0 +1,3 @@
+#Create Internal classic load balancer skim
+aws elb create-load-balancer elbinternal --listeners "Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=80" -scheme internal --subnets  subnet-xxx --security-groups sg-xxx
+
