@@ -1,1 +1,6 @@
 
+#Create Cluster
+aws ecs create-cluster --cluster-name mutalipcluster 
+
+#Creat EC2
+aws ec2 run-instances --image-id ami-d2f489aa --count 1 --instance-type t2.micro --region us-west-2 --iam-instance-profile Name="ecsInstanceRole"  --subnet-id subnet-8fb7b6c7
