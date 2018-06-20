@@ -1,0 +1,6 @@
+#Creating EC2 instances with cloudformation template
+aws cloudformation create-stack --template-body file://templates/single-instance.yml --stack-name single-instance --parameters ParameterKey=KeyName,ParameterValue=tutorial ParameterKey=InstanceType,ParameterValue=t2.micro
+
+#Cleanup
+
+aws cloudformation delete-stack --stack-name single-instance
