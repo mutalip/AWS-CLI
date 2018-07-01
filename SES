@@ -1,0 +1,19 @@
+#List email addresses
+aws ses list-identities
+
+
+# Verify email address
+aws ses verify-email-identity --email-address XXXX@XXXX.com --region us-west-2
+
+#Send email from one email t another email address
+aws ses send-email --from xxxxx --to xxxxxxx --subject "Test" --text "Hello, this is test email from aws ses services" --region us-west-2
+
+#Check email quota
+ aws ses get-send-quota --region us-west-2
+{
+    "Max24HourSend": 200.0, 
+    "SentLast24Hours": 1.0, 
+    "MaxSendRate": 1.0
+}
+
+
