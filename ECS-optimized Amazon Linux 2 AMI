@@ -1,0 +1,21 @@
+#The current Amazon ECS-optimized Amazon Linux 2 AMI can be retrieved using the AWS CLI with the following command:
+
+aws ssm get-parameters --names /aws/service/ecs/optimized-ami/amazon-linux-2/recommended
+
+
+Example:
+
+terraform mkurban$ aws ssm get-parameters --names /aws/service/ecs/optimized-ami/amazon-linux-2/recommended
+{
+    "InvalidParameters": [],
+    "Parameters": [
+        {
+            "Name": "/aws/service/ecs/optimized-ami/amazon-linux-2/recommended",
+            "LastModifiedDate": 1560798039.633,
+            "Value": "{\"schema_version\":1,\"image_name\":\"amzn2-ami-ecs-hvm-2.0.20190614-x86_64-ebs\",\"image_id\":\"ami-00e0090ac21971297\",\"os\":\"Amazon Linux 2\",\"ecs_runtime_version\":\"Docker version 18.06.1-ce\",\"ecs_agent_version\":\"1.29.0\"}",
+            "Version": 16,
+            "Type": "String",
+            "ARN": "arn:aws:ssm:us-west-2::parameter/aws/service/ecs/optimized-ami/amazon-linux-2/recommended"
+        }
+    ]
+}
