@@ -1,0 +1,6 @@
+#To restrict the results to only specified fields
+#The following describe-instances example uses the --query parameter to display only the AMI ID and tags for the specified instance.
+
+aws ec2 describe-instances \
+--instance-ids i-0XXXX\
+--query "Reservations[*].Instances[*].Placement.[AvailabilityZone]"
